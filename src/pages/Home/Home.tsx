@@ -23,7 +23,11 @@ export const Home = () => {
         Open Modal
       </button>
 
-      <Modal isOpen={isOpen} onClose={handleCloseModal}>
+      <Modal
+        ariaLabelledby="transcript modal"
+        isOpen={isOpen}
+        onClose={handleCloseModal}
+      >
         <S.Content>
           <h2>
             <strong>Romy</strong>, 27, has dyslexia
