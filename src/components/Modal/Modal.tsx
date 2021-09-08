@@ -18,9 +18,9 @@ export const Modal = ({
   if (!isOpen) return null
 
   return ReactDOM.createPortal(
-    <S.Wrapper className="modal">
-      <S.Content>
-        <button type="button" onClick={onClose}>
+    <S.Wrapper className="modal" data-testid="modal-overlay" onClick={onClose}>
+      <S.Content onClick={(e) => e.stopPropagation()}>
+        <button data-testid="close-modal" type="button" onClick={onClose}>
           <CloseIcon />
         </button>
         {children}
