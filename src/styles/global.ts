@@ -1,30 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-    url('../assets/fonts/roboto-v27-latin-regular.woff2') format('woff2');
-  }
-
-  @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-    url('../assets/fonts/roboto-v27-latin-500.woff2') format('woff2');
-  }
-
-  @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-    url('../assets/fonts/roboto-v27-latin-700.woff2') format('woff2');
-  }
-
   * {
     margin: 0;
     padding: 0;
