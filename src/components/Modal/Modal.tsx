@@ -27,7 +27,12 @@ export const Modal = ({
         aria-modal={isOpen}
         aria-labelledby={ariaLabelledby}
       >
-        <button data-testid="close-modal" type="button" onClick={onClose}>
+        <button
+          data-testid="close-modal"
+          type="button"
+          tabIndex={0}
+          onClick={onClose}
+        >
           <CloseIcon />
         </button>
         {children}
