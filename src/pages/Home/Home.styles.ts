@@ -1,5 +1,25 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  button {
+    height: 44px;
+    width: 160px;
+    background-color: #002938;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+`
+
 export const Content = styled.div`
   width: 100%;
   padding: 82px 148px 148px;

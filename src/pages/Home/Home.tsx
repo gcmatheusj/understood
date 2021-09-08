@@ -16,10 +16,12 @@ export const Home = () => {
   }
 
   return (
-    <div>
+    <S.Wrapper>
       <h1>Welcome to Understood</h1>
 
-      <button onClick={handleOpenModal}>Open Modal</button>
+      <button type="button" onClick={handleOpenModal}>
+        Open Modal
+      </button>
 
       <Modal isOpen={isOpen} onClose={handleCloseModal}>
         <S.Content>
@@ -54,6 +56,6 @@ export const Home = () => {
           </p>
         </S.Content>
       </Modal>
-    </div>
+    </S.Wrapper>
   )
 }
